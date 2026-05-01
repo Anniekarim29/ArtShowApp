@@ -102,7 +102,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                 width: 2,
               ),
               image: const DecorationImage(
-                image: AssetImage('assets/monalisa.png'),
+                image: AssetImage('assets/profile.jpeg'),
                 fit: BoxFit.cover,
               ),
             ),

@@ -61,7 +61,7 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 450,
+      height: 420,
       child: PageView.builder(
         controller: _pageController,
         physics: const BouncingScrollPhysics(),
@@ -86,15 +86,15 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
               // Apply rotation for 3D effect
               double angle = 0;
               if (_pageController.position.haveDimensions) {
-                angle = (_pageController.page! - index) * 0.1;
+                angle = (_pageController.page! - index) * 0.15; // Increased for better animation
               } else {
-                angle = (index - _currentPage) * -0.1;
+                angle = (index - _currentPage) * -0.15;
               }
 
               return Center(
                 child: SizedBox(
-                  height: Curves.easeOut.transform(value) * 450,
-                  width: Curves.easeOut.transform(value) * 320,
+                  height: Curves.easeOut.transform(value) * 420,
+                  width: Curves.easeOut.transform(value) * 280,
                   child: Transform(
                     transform: Matrix4.identity()
                       ..setEntry(3, 2, 0.001)

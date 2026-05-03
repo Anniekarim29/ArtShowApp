@@ -40,7 +40,7 @@ class PopularCollections extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 20.0),
           child: Container(
-            height: 180,
+            height: 220,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Theme.of(context).colorScheme.surface,

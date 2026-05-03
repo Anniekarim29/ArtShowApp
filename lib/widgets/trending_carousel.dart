@@ -61,7 +61,7 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 350,
+      height: 450,
       child: PageView.builder(
         controller: _pageController,
         physics: const BouncingScrollPhysics(),
@@ -93,8 +93,8 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
 
               return Center(
                 child: SizedBox(
-                  height: Curves.easeOut.transform(value) * 350,
-                  width: Curves.easeOut.transform(value) * 250,
+                  height: Curves.easeOut.transform(value) * 450,
+                  width: Curves.easeOut.transform(value) * 320,
                   child: Transform(
                     transform: Matrix4.identity()
                       ..setEntry(3, 2, 0.001)

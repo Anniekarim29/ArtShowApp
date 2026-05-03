@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/trending_carousel.dart';
-import '../widgets/featured_artists.dart';
 import '../widgets/popular_collections.dart';
 import '../widgets/floating_nav_bar.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -71,22 +70,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   const SizedBox(height: 15),
                   const TrendingCarousel().animate().fadeIn(delay: 300.ms).scale(begin: const Offset(0.95, 0.95), end: const Offset(1, 1)),
-                  const SizedBox(height: 30),
-                  
-                  // Featured Artists Section
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                    child: Text(
-                      'Featured Artists',
-                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
-                    ).animate().fadeIn(delay: 400.ms).slideX(begin: -0.1, end: 0),
-                  ),
-                  const SizedBox(height: 15),
-                  const FeaturedArtists().animate().fadeIn(delay: 500.ms),
-                  const SizedBox(height: 30),
-
                   // Popular Collections Section
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),

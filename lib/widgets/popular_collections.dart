@@ -28,6 +28,20 @@ class PopularCollections extends StatelessWidget {
       'artist': 'Marcus T.',
       'stats': '89 Artworks',
     },
+    {
+      'image': 'assets/download_7.jpeg',
+      'title': 'Minimalist Echo',
+      'category': 'Minimalism',
+      'artist': 'Sophia L.',
+      'stats': '60 Artworks',
+    },
+    {
+      'image': 'assets/The Five Stages Of Grief_ Exploring The Kübler-Ross Model.jpeg',
+      'title': 'Emotional Spectrum',
+      'category': 'Surrealism',
+      'artist': 'David K.',
+      'stats': '34 Artworks',
+    },
   ];
 
   @override

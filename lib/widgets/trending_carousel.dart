@@ -41,6 +41,27 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
       'views': '9k',
       'likes': '2.1k',
     },
+    {
+      'image': 'assets/download (10).jpeg',
+      'title': 'Future Echoes',
+      'artist': 'Liam R.',
+      'views': '15k',
+      'likes': '4.2k',
+    },
+    {
+      'image': 'assets/download (8).jpeg',
+      'title': 'Ethereal Flow',
+      'artist': 'Emma W.',
+      'views': '11k',
+      'likes': '3.8k',
+    },
+    {
+      'image': 'assets/download (9).jpeg',
+      'title': 'Vivid Imaginations',
+      'artist': 'Noah C.',
+      'views': '20k',
+      'likes': '6.5k',
+    },
   ];
 
   @override
@@ -48,7 +69,7 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
     super.initState();
     _pageController = PageController(
       initialPage: _currentPage,
-      viewportFraction: 0.7,
+      viewportFraction: 0.8,
     );
   }
 
@@ -61,7 +82,7 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 420,
+      height: 520,
       child: PageView.builder(
         controller: _pageController,
         physics: const BouncingScrollPhysics(),
@@ -93,8 +114,8 @@ class _TrendingCarouselState extends State<TrendingCarousel> {
 
               return Center(
                 child: SizedBox(
-                  height: Curves.easeOut.transform(value) * 420,
-                  width: Curves.easeOut.transform(value) * 280,
+                  height: Curves.easeOut.transform(value) * 520,
+                  width: Curves.easeOut.transform(value) * 330,
                   child: Transform(
                     transform: Matrix4.identity()
                       ..setEntry(3, 2, 0.001)

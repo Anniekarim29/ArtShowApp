@@ -36,7 +36,7 @@ class PopularCollections extends StatelessWidget {
       'stats': '60 Artworks',
     },
     {
-      'image': 'assets/The Five Stages Of Grief_ Exploring The Kübler-Ross Model.jpeg',
+      'image': 'assets/grief_stages.jpeg',
       'title': 'Emotional Spectrum',
       'category': 'Surrealism',
       'artist': 'David K.',

@@ -9,8 +9,8 @@ class FeaturedArtists extends StatelessWidget {
     'assets/download_6.jpeg',
     'assets/van_gogh.jpeg',
     'assets/download.jpeg',
-    'assets/download (10).jpeg',
-    'assets/download (8).jpeg',
+    'assets/download_10.jpeg',
+    'assets/download_8.jpeg',
     'assets/profile.jpeg',
   ];
 
